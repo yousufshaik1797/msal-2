@@ -1,0 +1,8 @@
+<button (click)="login()" *ngIf="!isAuthenticated">Login</button>
+<button (click)="logout()" *ngIf="isAuthenticated">Logout</button>
+<br>
+<button routerLink="profile">Profile</button>
+<br>
+<a *ngIf="isAuthenticated">{{activeUser}}</a>
+
+<router-outlet></router-outlet>
